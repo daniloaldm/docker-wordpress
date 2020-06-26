@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
+sudo service apache2 stop
 docker-compose up -d && \
 echo "
 ================ 🚀 Iniciando 🚀 ===================
-      Criado por Lucas Apoena
+      Criado por Lucas Apoena Anjo da Bleez
       
       Links de Acesso:
 
-      🌎 Web server:   http://localhost:81
+      🌎 Web server:   http://localhost
       ⚙️  Adminer:      http://localhost:8080
 
 ================ 🚀 -------- 🚀 ==================="

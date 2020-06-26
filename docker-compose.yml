@@ -5,24 +5,26 @@ services:
         build: .docker/wordpress/.
         restart: always
         ports: 
-            - 81:80
+            - 80:80
         environment: 
             WORDPRESS_DB_HOST: db
             WORDPRESS_DB_USER: wpuser
             WORDPRESS_DB_PASSWORD: wppass
             WORDPRESS_DB_NAME: wpdb
         volumes: 
-            - ./src/plugins:/var/www/html/wp-content/plugins
-            - ./src/themes:/var/www/html/wp-content/themes
+            - ./src:/var/www/html
+            - ./apache2/log:/var/log/apache2
 
     db:
         image: mysql:5.7
         restart: always
-        environment: 
+        ports:
+            - 3300:3306
+        environment:
             MYSQL_DATABASE: wpdb
             MYSQL_USER: wpuser
             MYSQL_PASSWORD: wppass
-            MYSQL_RANDOM_ROOT_PASSWORD: '1'
+            MYSQL_ROOT_PASSWORD: root
         volumes: 
             - db:/var/lib/mysql
 

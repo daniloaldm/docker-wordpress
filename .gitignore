@@ -1,2 +1,4 @@
 /src/plugins/*
 /src/themes/*
+/src/*
+/apache2/log/*

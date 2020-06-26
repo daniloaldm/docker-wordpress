@@ -3,7 +3,6 @@ sudo service apache2 stop
 docker-compose up -d && \
 echo "
 ================ 🚀 Iniciando 🚀 ===================
-      Criado por Lucas Apoena Anjo da Bleez
       
       Links de Acesso:
 

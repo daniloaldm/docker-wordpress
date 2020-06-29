@@ -27,17 +27,9 @@ Instale o [Docker](https://docs.docker.com/engine/installation/linux/docker-ce/u
 
 | Comando  | Descriçao  | Opçoes & Exemplos |
 |---|---|---|
-| `./dev/start` | Inicializa os seus containers      | |
-| `./dev/stop`  | Parando os seus containers         | |
-| `./dev/shell` | Acessando o seu container                     | `./shell root` |
+| `./start` | Inicializa os seus containers      | |
+| `./stop`  | Parando os seus containers         | |
+| `./shell` | Acessando o seu container                     | `./shell root` |
 
 
 ----------
-
-## Criando um Plugin:
-
-Para criar um novo plugin utilize a pasta `./src/plugins`
-
-## Criando um Tema:
-
-Para criar um novo plugin utilize a pasta `./src/themes`

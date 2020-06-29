@@ -7,7 +7,7 @@ Ambiente de desenvolvimento para wordpress com a utilizaçao do Docker
 
 ----------
 
-### Requisitos Minimos 
+### Requisitos Mínimos 
 
 :apple: **MacOS:**
 
